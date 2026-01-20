@@ -4,5 +4,5 @@ Allow: /
 # Host
 Host: https://www.successtechnocrat.com
 
-Sitemap: https://successtechnocrat.com/sitemap.xml
+Sitemap: https://www.successtechnocrat.com/sitemap.xml
 Allow: /
