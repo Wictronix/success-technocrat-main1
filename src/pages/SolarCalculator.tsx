@@ -15,14 +15,14 @@ import heroSolarCalculator from "@/assets/hero-solar-calculator.jpg";
 // Indian States and Union Territories
 const indianStatesAndUTs = [
   // States (28)
-  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", 
-  "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", 
-  "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", 
-  "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", 
-  "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", 
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar",
+  "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh",
+  "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra",
+  "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab",
+  "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura",
   "Uttar Pradesh", "Uttarakhand", "West Bengal",
   // Union Territories (8)
-  "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", 
+  "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu",
   "Delhi", "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry"
 ];
 
@@ -156,7 +156,7 @@ const SolarCalculator = () => {
         title="Solar Calculator - Success Technocrat | Calculate Your Solar Savings"
         description="Calculate your solar savings instantly. Enter your roof size, location, and electricity bill to get a personalized solar estimate for India."
         keywords="solar calculator, solar savings calculator, solar panel cost India, solar ROI"
-        canonicalUrl="https://successtechnocrat.com/solar-calculator"
+        canonicalUrl="https://www.successtechnocrat.com/solar-calculator"
       />
       <Header />
 
@@ -165,14 +165,14 @@ const SolarCalculator = () => {
         <section className="relative pt-32 pb-16 overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0">
-            <img 
-              src={heroSolarCalculator} 
-              alt="Solar Panels on Roof" 
+            <img
+              src={heroSolarCalculator}
+              alt="Solar Panels on Roof"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/60" />
           </div>
-          
+
           <div className="container mx-auto px-4 relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -183,7 +183,7 @@ const SolarCalculator = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full mb-6">
                 <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
                   <circle cx="12" cy="12" r="5" />
-                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" strokeWidth="2" fill="none" />
                 </svg>
                 <span className="text-sm font-medium text-white">Solar Savings Calculator</span>
               </div>
@@ -191,7 +191,7 @@ const SolarCalculator = () => {
                 Calculate Your <span className="text-primary">Solar Savings</span>
               </h1>
               <p className="text-lg text-white/80">
-                Discover how much you could save by switching to solar energy. 
+                Discover how much you could save by switching to solar energy.
                 Get an instant estimate based on your location and energy usage across India.
               </p>
             </motion.div>
@@ -213,9 +213,9 @@ const SolarCalculator = () => {
                     <CardTitle className="flex items-center gap-3 text-2xl">
                       <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                         <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                          <rect x="4" y="4" width="16" height="16" rx="2" fillOpacity="0.2"/>
-                          <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                          <path d="M9 9h6M9 13h6M9 17h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                          <rect x="4" y="4" width="16" height="16" rx="2" fillOpacity="0.2" />
+                          <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                          <path d="M9 9h6M9 13h6M9 17h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
                       </div>
                       Enter Your Details
@@ -290,16 +290,16 @@ const SolarCalculator = () => {
                       {isCalculating ? (
                         <>
                           <svg className="animate-spin h-5 w-5 mr-2" viewBox="0 0 24 24">
-                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/>
-                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                           </svg>
                           Calculating...
                         </>
                       ) : (
                         <>
                           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                            <circle cx="12" cy="12" r="10" fillOpacity="0.2"/>
-                            <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
+                            <circle cx="12" cy="12" r="10" fillOpacity="0.2" />
+                            <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
                           </svg>
                           Calculate My Savings
                         </>
@@ -321,8 +321,8 @@ const SolarCalculator = () => {
                       <CardTitle className="flex items-center gap-3 text-2xl text-primary">
                         <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                           <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z" fillOpacity="0.2"/>
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" fillOpacity="0.2" />
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="1.5" fill="none" />
                           </svg>
                         </div>
                         Your Solar Estimate
@@ -343,9 +343,9 @@ const SolarCalculator = () => {
                         <div className="p-4 bg-background rounded-xl border border-border">
                           <div className="flex items-center gap-2 mb-2">
                             <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                              <rect x="3" y="3" width="18" height="18" rx="2" fillOpacity="0.2"/>
-                              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                              <path d="M3 9h18" stroke="currentColor" strokeWidth="1.5"/>
+                              <rect x="3" y="3" width="18" height="18" rx="2" fillOpacity="0.2" />
+                              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                              <path d="M3 9h18" stroke="currentColor" strokeWidth="1.5" />
                             </svg>
                             <span className="text-sm text-muted-foreground">System Size</span>
                           </div>
@@ -355,8 +355,8 @@ const SolarCalculator = () => {
                         <div className="p-4 bg-background rounded-xl border border-border">
                           <div className="flex items-center gap-2 mb-2">
                             <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fillOpacity="0.2"/>
-                              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fillOpacity="0.2" />
+                              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" strokeWidth="1.5" fill="none" />
                             </svg>
                             <span className="text-sm text-muted-foreground">Annual Output</span>
                           </div>
@@ -366,8 +366,8 @@ const SolarCalculator = () => {
                         <div className="p-4 bg-background rounded-xl border border-border">
                           <div className="flex items-center gap-2 mb-2">
                             <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                              <circle cx="12" cy="12" r="10" fillOpacity="0.2"/>
-                              <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                              <circle cx="12" cy="12" r="10" fillOpacity="0.2" />
+                              <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
                             </svg>
                             <span className="text-sm text-muted-foreground">Payback Period</span>
                           </div>
@@ -377,8 +377,8 @@ const SolarCalculator = () => {
                         <div className="p-4 bg-background rounded-xl border border-border">
                           <div className="flex items-center gap-2 mb-2">
                             <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                              <circle cx="12" cy="12" r="10" fillOpacity="0.2"/>
-                              <path d="M8 12l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                              <circle cx="12" cy="12" r="10" fillOpacity="0.2" />
+                              <path d="M8 12l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
                             </svg>
                             <span className="text-sm text-muted-foreground">CO₂ Offset</span>
                           </div>
@@ -399,7 +399,7 @@ const SolarCalculator = () => {
                         <Link to="/contact">
                           Get a Detailed Quote
                           <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                            <path d="M5 12h14M12 5l7 7-7 7" />
                           </svg>
                         </Link>
                       </Button>
@@ -410,9 +410,9 @@ const SolarCalculator = () => {
                     <CardContent className="text-center py-16">
                       <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                         <svg className="w-10 h-10 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                          <circle cx="12" cy="12" r="5" fillOpacity="0.2"/>
-                          <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" strokeWidth="1.5"/>
+                          <circle cx="12" cy="12" r="5" fillOpacity="0.2" />
+                          <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" strokeWidth="1.5" />
                         </svg>
                       </div>
                       <h3 className="text-xl font-semibold text-foreground mb-2">

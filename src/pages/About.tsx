@@ -30,7 +30,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // --- PREPARE DATA FOR TWO ROWS ---
-  
+
   // Row 1: Solar & Finance
   const row1Data = allPartners.filter(
     (p) => p.category === "Solar Partner" || p.category === "Tech & Finance"
@@ -76,7 +76,7 @@ const About = () => {
         title="About Us - Success Technocrat | Leading Solar Energy Company"
         description="Learn about Success Technocrat, Gujarat's leading solar energy company since 2017. ISO certified, 500+ projects, pan-India operations."
         keywords="about Success Technocrat, solar company Gujarat, renewable energy India"
-        canonicalUrl="https://successtechnocrat.com/about"
+        canonicalUrl="https://www.successtechnocrat.com/about"
       />
       <Header />
 
@@ -265,12 +265,12 @@ const About = () => {
             </motion.div>
 
             <div className="flex flex-col gap-8">
-              
+
               {/* ROW 1: Solar, Tech & Finance (Scrolls Left) */}
               <div className="relative w-full flex overflow-hidden">
                 <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
                 <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
-                
+
                 <motion.div
                   className="flex gap-6 items-center"
                   animate={{ x: "-50%" }}
@@ -291,7 +291,7 @@ const About = () => {
               <div className="relative w-full flex overflow-hidden">
                 <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
                 <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
-                
+
                 <motion.div
                   className="flex gap-6 items-center"
                   initial={{ x: "-50%" }}
@@ -341,7 +341,7 @@ const PartnerCard = ({ partner }: { partner: any }) => {
     <div className="flex-shrink-0 w-[200px] bg-card border border-border rounded-xl p-4 flex flex-col items-center justify-center gap-3 hover:border-primary/50 hover:shadow-lg transition-all duration-300 group">
       <div className="h-12 w-full flex items-center justify-center overflow-hidden">
         <img
-          src={partner.logo} 
+          src={partner.logo}
           alt={partner.name}
           className="h-full w-auto object-contain transition-all duration-300"
         />

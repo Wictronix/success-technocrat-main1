@@ -119,22 +119,22 @@ const Services = () => {
         title="Solar Services - Success Technocrat | Residential, Commercial & Industrial"
         description="Complete solar solutions for homes, businesses, and industries. Residential solar from ₹45,000/kW. Free site survey and consultation."
         keywords="residential solar, commercial solar, industrial solar, solar maintenance, EPC contractor"
-        canonicalUrl="https://successtechnocrat.com/services"
+        canonicalUrl="https://www.successtechnocrat.com/services"
       />
       <Header />
-      
+
       {/* Hero Section - Dark transparent with image */}
       <section className="relative pt-32 pb-20 overflow-hidden" ref={heroRef}>
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
-            src={heroServices} 
-            alt="Solar Installation" 
+          <img
+            src={heroServices}
+            alt="Solar Installation"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
-        
+
         <div className="container-custom relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -215,7 +215,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
   return (
     <motion.div
       // Added ID here for scrolling
-      id={service.id} 
+      id={service.id}
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}

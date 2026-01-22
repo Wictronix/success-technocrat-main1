@@ -115,7 +115,7 @@ const Contact = () => {
         title="Contact Us - Success Technocrat | Get Free Solar Quote"
         description="Contact Success Technocrat for a free solar consultation and site survey. Call +91 931-635-1322 or email us."
         keywords="contact solar company, solar quote, free solar consultation"
-        canonicalUrl="https://successtechnocrat.com/contact"
+        canonicalUrl="https://www.successtechnocrat.com/contact"
       />
 
       <Header />

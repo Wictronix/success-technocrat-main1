@@ -119,94 +119,94 @@ const caseStudies: ExtendedCaseStudyData[] = [
   /* ---------------- Residential Case Studies ---------------- */
 
   {
-  id: 8,
-  title: "Mr. Ashok Vasava",
-  category: "Residential",
-  projectSize: "3.2 kW",
-  panels: "Waaree 540Wp",
-  inverter: "SolarYaan",
-  mountingStructure: "Flush Mount",
-  annualUnits: "5.8K Units",
-  image: residential1,
-},
-{
-  id: 9,
-  title: "Mr. Raju",
-  category: "Residential",
-  projectSize: "9.72 kW",
-  panels: "Waaree 540Wp",
-  inverter: "SolarYaan",
-  mountingStructure: "Flush Mount",
-  annualUnits: "17.8K Units",
-  image: residential2,
-},
-{
-  id: 10,
-  title: "Mr. Sanjay Kumar",
-  category: "Residential",
-  projectSize: "6.2 kW",
-  panels: "Waaree 620Wp",
-  inverter: "KSolare",
-  mountingStructure: "Flush Mount",
-  annualUnits: "10.8K Units",
-  image: residential3,
-},
-{
-  id: 11,
-  title: "Mr. Ajay Parmar",
-  category: "Residential",
-  projectSize: "6.9 kW",
-  panels: "Waaree 580Wp",
-  inverter: "SolarYaan",
-  mountingStructure: "Flush Mount",
-  annualUnits: "12.7K Units",
-  image: residential1,
-},
-    {
-  id: 12,
-  title: "Mangala Green Society",
-  category: "Commercial",
-  projectSize: "62.7 kW",
-  panels: "Rayzon 400Wp",
-  inverter: "KSolare",
-  mountingStructure: "GI Elevated",
-  annualUnits: "96K Units",
-  image: caseStudy8,
-},
-{
-  id: 13,
-  title: "Shree Krishna Enterprise",
-  category: "Industrial",
-  projectSize: "70 kW",
-  panels: "Emmvee 580Wp",
-  inverter: "KSolare",
-  mountingStructure: "Flush Mount",
-  annualUnits: "1.17 Lakh Units",
-  image: caseStudy9,
-},
-{
-  id: 14,
-  title: "Dairy Farm Padra",
-  category: "Commercial",
-  projectSize: "30 kW",
-  panels: "Waaree 550Wp",
-  inverter: "SolarYaan",
-  mountingStructure: "Flush Mount",
-  annualUnits: "52.1K Units",
-  image: caseStudy10,
-},
+    id: 8,
+    title: "Mr. Ashok Vasava",
+    category: "Residential",
+    projectSize: "3.2 kW",
+    panels: "Waaree 540Wp",
+    inverter: "SolarYaan",
+    mountingStructure: "Flush Mount",
+    annualUnits: "5.8K Units",
+    image: residential1,
+  },
+  {
+    id: 9,
+    title: "Mr. Raju",
+    category: "Residential",
+    projectSize: "9.72 kW",
+    panels: "Waaree 540Wp",
+    inverter: "SolarYaan",
+    mountingStructure: "Flush Mount",
+    annualUnits: "17.8K Units",
+    image: residential2,
+  },
+  {
+    id: 10,
+    title: "Mr. Sanjay Kumar",
+    category: "Residential",
+    projectSize: "6.2 kW",
+    panels: "Waaree 620Wp",
+    inverter: "KSolare",
+    mountingStructure: "Flush Mount",
+    annualUnits: "10.8K Units",
+    image: residential3,
+  },
+  {
+    id: 11,
+    title: "Mr. Ajay Parmar",
+    category: "Residential",
+    projectSize: "6.9 kW",
+    panels: "Waaree 580Wp",
+    inverter: "SolarYaan",
+    mountingStructure: "Flush Mount",
+    annualUnits: "12.7K Units",
+    image: residential1,
+  },
+  {
+    id: 12,
+    title: "Mangala Green Society",
+    category: "Commercial",
+    projectSize: "62.7 kW",
+    panels: "Rayzon 400Wp",
+    inverter: "KSolare",
+    mountingStructure: "GI Elevated",
+    annualUnits: "96K Units",
+    image: caseStudy8,
+  },
+  {
+    id: 13,
+    title: "Shree Krishna Enterprise",
+    category: "Industrial",
+    projectSize: "70 kW",
+    panels: "Emmvee 580Wp",
+    inverter: "KSolare",
+    mountingStructure: "Flush Mount",
+    annualUnits: "1.17 Lakh Units",
+    image: caseStudy9,
+  },
+  {
+    id: 14,
+    title: "Dairy Farm Padra",
+    category: "Commercial",
+    projectSize: "30 kW",
+    panels: "Waaree 550Wp",
+    inverter: "SolarYaan",
+    mountingStructure: "Flush Mount",
+    annualUnits: "52.1K Units",
+    image: caseStudy10,
+  },
 
-{
-  id: 15,
-  title: "Mr. Suhang Raval",
-  category: "Residential",
-  projectSize: "3.7 kW",
-  panels: "Waaree 620Wp",
-  inverter: "SolarYaan",
-  mountingStructure: "Flush Mount",
-  annualUnits: "6.7K Units",
-  image: residential6, // 👉 PLEASE ADD ACTUAL SITE IMAGE FOR THIS CUSTOMER
-},
+  {
+    id: 15,
+    title: "Mr. Suhang Raval",
+    category: "Residential",
+    projectSize: "3.7 kW",
+    panels: "Waaree 620Wp",
+    inverter: "SolarYaan",
+    mountingStructure: "Flush Mount",
+    annualUnits: "6.7K Units",
+    image: residential6, // 👉 PLEASE ADD ACTUAL SITE IMAGE FOR THIS CUSTOMER
+  },
 
 
 ];
@@ -229,6 +229,7 @@ const CaseStudies = () => {
       <SEOHead
         title="Case Studies | Success Technocrat"
         description="Industrial, Commercial & Residential Solar Case Studies"
+        canonicalUrl="https://www.successtechnocrat.com/case-studies"
       />
 
       <Header />
@@ -267,11 +268,10 @@ const CaseStudies = () => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-6 py-2 rounded-full font-medium ${
-                  activeCategory === cat
+                className={`px-6 py-2 rounded-full font-medium ${activeCategory === cat
                     ? "bg-primary text-white shadow-lg"
                     : "bg-secondary"
-                }`}
+                  }`}
               >
                 {cat}
               </button>
