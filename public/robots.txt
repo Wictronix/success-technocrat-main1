@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.successtechnocrat.com
-
 Sitemap: https://www.successtechnocrat.com/sitemap.xml
-Allow: /
