@@ -57,6 +57,7 @@ const Hero = () => {
       aria-label="Hero section with solar energy solutions"
     >
       {/* Background Slider */}
+      {/* Background Slider */}
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -66,9 +67,16 @@ const Hero = () => {
           transition={{ duration: 1.5, scale: { duration: 6, ease: "linear" } }}
           className="absolute inset-0 z-0"
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
+          {/* LCP Optimization: Use <img> tag instead of background-image */}
+          <img
+            src={slides[currentSlide].image}
+            alt={slides[currentSlide].title}
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={1080}
+            // Prioritize the first slide for LCP
+            fetchPriority={currentSlide === 0 ? "high" : "auto"}
+            loading={currentSlide === 0 ? "eager" : "lazy"}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />

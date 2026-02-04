@@ -96,22 +96,23 @@ const Services = () => {
               className={`group relative ${index === 1 ? "sm:col-span-2 lg:col-span-1" : ""}`}
             >
               <div
-                className={`h-full rounded-xl sm:rounded-2xl bg-card border overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${
-                  service.featured
+                className={`h-full rounded-xl sm:rounded-2xl bg-card border overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${service.featured
                     ? "border-primary shadow-lg shadow-primary/10"
                     : "border-border hover:border-primary/30"
-                }`}
+                  }`}
               >
                 {/* Image */}
                 <div className="relative h-40 sm:h-48 overflow-hidden">
-                  <img 
-                    src={service.image} 
+                  <img
+                    src={service.image}
                     alt={`${service.title} - Solar installation service`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    width={400}
+                    height={300}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-charcoal/80 via-deep-charcoal/20 to-transparent" aria-hidden="true" />
-                  
+
                   {/* Featured badge */}
                   {service.featured && (
                     <div className="absolute top-3 sm:top-4 right-3 sm:right-4 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg bg-gradient-to-r from-primary to-amber-gold text-white text-xs font-semibold">
@@ -121,11 +122,10 @@ const Services = () => {
 
                   {/* Icon */}
                   <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4">
-                    <div className={`w-12 sm:w-14 h-12 sm:h-14 rounded-lg sm:rounded-xl flex items-center justify-center backdrop-blur-sm transition-transform group-hover:scale-110 ${
-                      service.featured
+                    <div className={`w-12 sm:w-14 h-12 sm:h-14 rounded-lg sm:rounded-xl flex items-center justify-center backdrop-blur-sm transition-transform group-hover:scale-110 ${service.featured
                         ? "bg-gradient-to-br from-primary to-amber-gold"
                         : "bg-white/20 border border-white/30"
-                    }`}>
+                      }`}>
                       <service.icon className="w-6 sm:w-7 h-6 sm:h-7 text-white" aria-hidden="true" />
                     </div>
                   </div>
@@ -159,7 +159,10 @@ const Services = () => {
                     className="w-full group/btn min-h-[44px] touch-manipulation"
                     asChild
                   >
-                    <Link to={service.href}>
+                    <Link
+                      to={service.href}
+                      aria-label={`Learn more about ${service.title}`}
+                    >
                       Learn More
                       <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" aria-hidden="true" />
                     </Link>

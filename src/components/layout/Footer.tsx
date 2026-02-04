@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
 import logo from "@/assets/logo.png";
 // Make sure this file exists in your assets folder
-import wxLogo from "@/assets/wxWhite.png"; 
+import wxLogo from "@/assets/wxWhite.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -38,15 +38,17 @@ const Footer = () => {
             <Link to="/" className="inline-block">
               {/* Logo with White Rounded Square Background (rounded-xl) */}
               <div className="h-16 w-16 bg-white rounded-xl flex items-center justify-center p-1.5 overflow-hidden shadow-sm">
-                <img 
-                  src={logo} 
-                  alt="Success Technocrat - Solar EPC Company" 
-                  className="h-full w-full object-contain" 
+                <img
+                  src={logo}
+                  alt="Success Technocrat - Solar EPC Company"
+                  className="h-full w-full object-contain"
+                  width={64}
+                  height={64}
                 />
               </div>
             </Link>
-            <p className="text-white/70 text-sm leading-relaxed">
-              Leading EPC company specializing in renewable energy solutions across India. 
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Leading EPC company specializing in renewable energy solutions across India.
               10+ years of excellence, 500+ projects delivered.
             </p>
             <div className="flex gap-3">
@@ -73,7 +75,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-white/70 hover:text-primary transition-colors text-sm flex items-center gap-2 group"
+                    className="text-gray-300 hover:text-primary transition-colors text-sm flex items-center gap-2 group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors" />
                     {link.name}
@@ -91,7 +93,7 @@ const Footer = () => {
                 <li key={service.name}>
                   <Link
                     to={service.href}
-                    className="text-white/70 hover:text-primary transition-colors text-sm flex items-center gap-2 group"
+                    className="text-gray-300 hover:text-primary transition-colors text-sm flex items-center gap-2 group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors" />
                     {service.name}
@@ -109,14 +111,14 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5 text-primary" aria-hidden="true" />
                 </div>
-                <span className="text-white/70 text-sm">
+                <span className="text-gray-300 text-sm">
                   Darshanam Crossroad, Second Floor 224-225, Soma Talav Char Rasta, Vadodara 390025
                 </span>
               </div>
               <div>
                 <a
                   href="tel:+919316351322"
-                  className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors touch-manipulation py-1"
+                  className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors touch-manipulation py-1"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                     <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
@@ -127,7 +129,7 @@ const Footer = () => {
               <div>
                 <a
                   href="mailto:sales@successtechnocrat.com"
-                  className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors touch-manipulation py-1"
+                  className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors touch-manipulation py-1"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                     <Mail className="w-5 h-5 text-primary" aria-hidden="true" />
@@ -143,13 +145,13 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container-custom py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          
+
           {/* Copyright */}
           <p className="text-white/60 text-sm order-3 md:order-1">
             © {currentYear} Success Technocrat. All rights reserved.
           </p>
 
-          
+
 
           {/* Powered By Section (Right End Corner) */}
           <a
